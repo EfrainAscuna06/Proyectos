@@ -1,0 +1,340 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b0f3b;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    position: fixed;               
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: 100px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.nav-btn1 {
+    background-color: transparent;
+    color: #591758;
+    border: none;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.nav-btn:hover {
+    color: #ac21a9; 
+}
+
+.search-bar {
+    padding: 5px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 70px;
+    border: 0px solid #5a5656;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);  
+    margin-left: 0;  
+    margin-right: 20px;  
+}
+
+
+
+/* Estilo del detalle del producto */
+
+.producto-detalle{
+    position: relative;
+    margin-bottom: 250px;
+}
+.imagen{
+    position: relative;
+    left: 200px;
+    left: 230px;
+    top: 150px;
+    width: 500px;
+    height: 500px;
+}
+.producto-info {
+    max-width: 500px;
+    margin-left: 20px;
+    position: relative;
+    right: 30px;
+    top: -250px;
+    left: 750px;
+
+}
+
+.producto-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.producto-info .precio {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.producto-info .tiempo-subasta {
+    font-size: 1.2em;
+    color: #424949;
+}
+
+.producto-info .acciones {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00b80f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-agregar-carrito {
+    padding: 10px 20px;
+    background-color: #ee0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #7a0808;
+}
+
+.btn:hover {
+    background-color: #065e0d;
+}
+
+ 
+
+/*Boton de carrito*/
+
+.carrito-boton-container {
+    position:absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.carrito-boton span{
+    position: relative;
+
+}
+
+.carrito-boton {
+    position:fixed;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    right: 20px;
+}
+
+.carrito-icono {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px;
+}
+
+
+/* Boton de whatsapp */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; 
+    right: 1250px; 
+    align-items: center;
+    gap: 10px; 
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer; 
+}
+
+.floating-whatsapp img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+/* Pie de página */
+
+.footer {
+    background-color: #3b0f3b;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 450px;
+    position: relative;
+    top: -400px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 35px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-links {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-contact {
+    max-width: 300px;
+    position: relative;
+    left: 40px;
+}
+
+.footer-social {
+    max-width: 280px;
+    position: relative;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffdaff;
+}
+
+.footer-about p,
+.footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffdaff;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Sección inferior del pie de página */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    margin-top: 1rem;
+}
+
+.footer-bottom a {
+    color: #ffdaff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subastas | SUBASTEC</title>
+    <link rel="stylesheet" href="/css/Subastas.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/images/3b288cc5-5872-4167-8fe9-fe8ddbf34fbe-removebg-preview.png" alt="SUBASTEC Logo"
+                class="logo-img">
+        </div>
+        <div class="nav-links">
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+            <a href="/Pagina de inicio.html"><button class="nav-btn">Inicio</button></a>
+            <a href="/Quienessomos.html"><button class="nav-btn">Quienes somos</button></a>
+            <a href="/Tienda.html"><button class="nav-btn">Tienda</button></a>
+            <a href="/notificaciones.html"><button class="nav-btn">Notificaciones</button></a>
+            <a href="/Login.html"><button class="nav-btn login-btn">Ingresar</button></a>
+        </div>
+    </header>
+
+    <!-- Botón para cambiar entre categorías -->
+    <section id="filtros">
+        <div class="filtros-container">
+            <!-- Selector de categorías -->
+            <select id="filtro-categoria">
+                <option value="">Categoría</option>
+                <option value="Tecnologia">Tecnología</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Electrodomenticos">Electrodomenticos</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Juguetes">Juguetes</option>
+            </select>
+
+            <!-- Control deslizante de precios -->
+            <div class="rango-precios">
+                <label for="precio-min">Precio min:</label>
+                <input type="number" id="precio-min" placeholder="USD 0">
+
+                <label for="precio-max">Precio max:</label>
+                <input type="number" id="precio-max" placeholder="USD 1000">
+            </div>
+
+            <!-- Botón para aplicar el filtro -->
+            <button id="aplicar-filtro">Aplicar Filtros</button>
+        </div>
+    </section>
+
+
+
+    <h2 id="filtro-titulo" class="subtitulo">PRODUCTOS DISPONIBLES</h2>
+
+    <!-- Lista de productos -->
+    <div id="productos-lista" class="productos">
+        <div class="producto" data-categoria="Tecnologia" data-precio="600">
+            <img src="/images/subasta1.jpg" alt="Producto 1">
+            <div class="producto-info">
+                <h3>SAMSUNG Galaxy A15</h3>
+                <p class="precio">S/.600</p>        
+                <a href="/Detalledeproducto.html?productId=1"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Transporte" data-precio="200000">
+            <img src="/images/subasta5.webp" alt="Producto 2">
+            <div class="producto-info">
+                <h3>Auto Toyota 4Runner</h3>
+                <p class="precio">S/.200 000</p>
+                <a href="/Detalledeproducto.html?productId=2"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div> 
+
+        <div class="producto" data-categoria="Electrodomenticos" data-precio="3200">
+            <img src="/images/subasta9.webp" alt="Producto 3">
+            <div class="producto-info">
+                <h3>Batidora Profesional 6.9L</h3>
+                <p class="precio">S/.3200</p>
+                <a href="/Detalledeproducto.html?productId=3"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Deportes" data-precio="60">
+            <img src="/images/subasta13.avif" alt="Producto 4">
+            <div class="producto-info">
+                <h3>PELOTA ADIDAS FÚTBOL</h3>
+                <p class="precio">S/.60</p>
+                <a href="/Detalledeproducto.html?productId=4"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Juguetes" data-precio="120">
+            <img src="/images/subasta17.avif" alt="Producto 5">
+            <div class="producto-info">
+                <h3>Muñeca BARBIE</h3>
+                <p class="precio">S/.120</p>
+                <a href="/Detalledeproducto.html?productId=5"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Tecnologia" data-precio="1800">
+            <img src="/images/subasta2.webp" alt="Producto 6">
+            <div class="producto-info">
+                <h3>Cámara fotográfica CANON</h3>
+                <p class="precio">S/.1800</p>
+                <a href="/Detalledeproducto.html?productId=6"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Transporte" data-precio="6500">
+            <img src="/images/subasta6.webp" alt="Producto 7">
+            <div class="producto-info">
+                <h3>MOTO JETTOR OMEGA 200</h3>
+                <p class="precio">S/.6500</p>
+                <a href="/Detalledeproducto.html?productId=7"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Electrodomenticos" data-precio="250">
+            <img src="/images/subasta10.webp" alt="Producto 8">
+            <div class="producto-info">
+                <h3>Licuadora IMACO</h3>
+                <p class="precio">S/.250</p>
+                <a href="/Detalledeproducto.html?productId=8"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Deportes" data-precio="120">
+            <img src="/images/subasta14.webp" alt="Producto 9">
+            <div class="producto-info">
+                <h3>PELOTA DE BASKET WILSON</h3>
+                <p class="precio">S/.120</p>
+                <a href="/Detalledeproducto.html?productId=9"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Juguetes" data-precio="270">
+            <img src="/images/subasta18.webp" alt="Producto 10">
+            <div class="producto-info">
+                <h3>MUÑECO BUZZ LIGHTYEAR </h3>
+                <p class="precio">S/.270</p>      
+                <a href="/Detalledeproducto.html?productId=10"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Tecnologia" data-precio="1400">
+            <img src="/images/subasta3.webp" alt="Producto 11">
+            <div class="producto-info">
+                <h3>Laptop Lenovo IdeaPad 1</h3>
+                <p class="precio">S/.1400</p>
+                <a href="/Detalledeproducto.html?productId=11"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>   
+
+        <div class="producto" data-categoria="Transporte" data-precio="1800">
+            <img src="/images/subasta7.png" alt="Producto 12">
+            <div class="producto-info">
+                <h3>Scooter E2 Pro</h3>
+                <p class="precio">S/.1800</p>
+                <a href="/Detalledeproducto.html?productId=12"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Electrodomenticos" data-precio="6000">
+            <img src="/images/subasta11.webp" alt="Producto 13">
+            <div class="producto-info">
+                <h3>Refrigeradora Side Samsung</h3>
+                <p class="precio">S/.6000</p>
+                <a href="/Detalledeproducto.html?productId=13"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Deportes" data-precio="180">
+            <img src="/images/subasta15.avif" alt="Producto 14">
+            <div class="producto-info">
+                <h3>PELOTA DE VOLEY MIKASA</h3>
+                <p class="precio">S/.180</p>
+                <a href="/Detalledeproducto.html?productId=14"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Juguetes" data-precio="140">
+            <img src="/images/subasta19.webp" alt="Producto 15">
+            <div class="producto-info">
+                <h3>Coche de acrobacias RC</h3>
+                <p class="precio">S/.140</p>
+                <a href="/Detalledeproducto.html?productId=15"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Tecnologia" data-precio="2000">
+            <img src="/images/subasta4.jpg" alt="Producto 16">
+            <div class="producto-info">
+                <h3>Playstation 5 Digital</h3>
+                <p class="precio">S/.2000</p>
+                <a href="/Detalledeproducto.html?productId=16"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Transporte" data-precio="58000">
+            <img src="/images/subasta8.jpg" alt="Producto 17">
+            <div class="producto-info">
+                <h3>Auto Kia All-New K3</h3>
+                <p class="precio">S/.58000</p>
+                <a href="/Detalledeproducto.html?productId=17"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Electrodomenticos" data-precio="4500">
+            <img src="/images/subasta12.webp" alt="Producto 18">
+            <div class="producto-info">
+                <h3>Cocina LG 5 hornillas</h3>
+                <p class="precio">S/.4500</p>
+                <a href="/Detalledeproducto.html?productId=18"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Deportes" data-precio="200">
+            <img src="/images/subasta16.avif" alt="Producto 19">
+            <div class="producto-info">
+                <h3>Camiseta Oficial De Fútbol Perú</h3>
+                <p class="precio">S/.200</p>
+                <a href="/Detalledeproducto.html?productId=19"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Juguetes" data-precio="1100">
+            <img src="/images/subasta20.webp" alt="Producto 20">
+            <div class="producto-info">
+                <h3>HOT WHEELS JUEGO DE PISTAS DE AUTOS</h3>   
+                <p class="precio">S/.1100</p>
+                <a href="/Detalledeproducto.html?productId=20"><button class="participar-btn">Participar</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="carrito-boton-container">
+        <a href="/Carritodecompras.html" class="carrito-boton">
+            <img src="/images/carrito.png" alt="Carrito" class="carrito-icono">
+            <span>Carrito</span>
+        </a>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="/images/logo1.png" alt="Logo" class="logo-img">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección Sobre Nosotros -->
+            <div class="footer-about">
+                <h3>Sobre Subastec</h3>
+                <p> Somos una plataforma líder en ventas en línea que conecta
+                    a compradores en todo el mundo para obtener productos
+                    exclusivos a precios increibles.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="/Pagina de inicio.html">Inicio</a></li>
+                    <li><a href="/Quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="/Subastas.html">Subastas</a></li>
+                    <li><a href="/Notificaciones.html">Notificaciones</a></li>
+                    <li><a href="/Login.html">Ingresar</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p><strong>Teléfono:</strong> 935 826 637</p>
+                <p><strong>Email:</strong> soporte@subastec.com</p>
+                <p><strong>Dirección:</strong> Av.San Juan 123, Lima , Peru</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <!-- Enlace a Facebook -->
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo3.png" alt="Facebook">
+                    </a>
+
+                    <!-- Enlace a Twitter -->
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo4.png" alt="Twitter">
+                    </a>
+
+                    <!-- Enlace a Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo2.png" alt="Instagram">
+                    </a>
+
+                    <!-- Enlace a WhatsApp -->
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo1.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Derechos Reservados -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Subastec. Todos los derechos reservados. | <a href="/Frontend/terminos.html">Términos y
+                    Condiciones</a> | <a href="/Frontend/politica.html">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const filtroCategoria = document.getElementById("filtro-categoria");
+            const precioMinInput = document.getElementById("precio-min");
+            const precioMaxInput = document.getElementById("precio-max");
+            const aplicarFiltroBtn = document.getElementById("aplicar-filtro");
+            const productosLista = document.getElementById("productos-lista");
+            const productos = productosLista.getElementsByClassName("producto");
+            const filtroTitulo = document.getElementById("filtro-titulo");
+
+
+            // Evento para aplicar estilos a cada producto filtrado
+            productosLista.addEventListener("DOMNodeInserted", function (event) {
+                const productoElement = event.target;
+
+                if (productoElement.classList.contains("producto")) {
+                    // Aplicar estilos al producto
+                    productoElement.style.display = "flex";
+                    productoElement.style.flexDirection = "column";
+                    productoElement.style.alignItems = "center";
+                    productoElement.style.width = "200px";
+                    productoElement.style.border = "1px solid #ccc";
+                    productoElement.style.borderRadius = "5px";
+                    productoElement.style.padding = "15px";
+                    productoElement.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+                    productoElement.style.backgroundColor = "#fff";
+                    productoElement.style.transition = "transform 0.2s ease";
+
+                    // Efecto hover
+                    productoElement.addEventListener("mouseover", () => {
+                        productoElement.style.transform = "scale(1.05)";
+                    });
+
+                    productoElement.addEventListener("mouseout", () => {
+                        productoElement.style.transform = "scale(1)";
+                    });
+                }
+            });
+
+
+            // Función para aplicar filtros
+            aplicarFiltroBtn.addEventListener("click", function () {
+                const categoriaSeleccionada = filtroCategoria.value;
+                const precioMin = parseFloat(precioMinInput.value) || 0;  // Si no hay valor, 0
+                const precioMax = parseFloat(precioMaxInput.value) || Infinity;  // Si no hay valor, Infinity
+
+                // Iterar sobre todos los productos y aplicar el filtro
+                Array.from(productos).forEach(producto => {
+                    const categoria = producto.getAttribute("data-categoria");
+                    const precio = parseFloat(producto.getAttribute("data-precio"));
+
+                    // Mostrar u ocultar productos según los filtros
+                    const cumpleCategoria = categoriaSeleccionada === "" || categoria === categoriaSeleccionada;
+                    const cumplePrecio = precio >= precioMin && precio <= precioMax;
+
+                    if (cumpleCategoria && cumplePrecio) {
+                        producto.style.display = "block"; // Mostrar el producto
+                    } else {
+                        producto.style.display = "none"; // Ocultar el producto
+                    }
+                });
+
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | SUBASTEC</title>
+    <link rel="stylesheet" href="/css/Login.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="/images/3b288cc5-5872-4167-8fe9-fe8ddbf34fbe-removebg-preview.png" alt="SUBASTEC Logo"
+                class="logo-img">
+        </div>
+        <div class="nav-links">
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+            <a href="/Pagina de inicio.html"><button class="nav-btn">Inicio</button></a>
+            <a href="/Quienessomos.html"><button class="nav-btn">Quienes somos</button></a>
+            <a href="/Tienda.html"><button class="nav-btn">Tienda</button></a>
+            <a href="/Notificaciones.html"><button class="nav-btn">Notificaciones</button></a>
+            <a href="/Login.html"><button class="nav-btn login-btn">Ingresar</button></a>
+        </div>
+    </header>
+
+    <!-- Cuerpo de la página -->
+    <main>
+        <div class="login-container">
+            <h2>Iniciar sesión</h2>
+            <form class="login-form" action="/iniciar-sesion" method="POST">
+                <div class="input-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="contrasena" placeholder="Tu contraseña" required>
+                </div>
+                <button type="submit" class="btn-login">Ingresar</button>
+            </form>
+        </div>
+        <div class="login-container2">
+            <div class="forgot-password">
+                <button class="forgot-btn">¿Olvidaste tu contraseña?</button>
+            </div>
+            <div class="signup-prompt">
+                <p>¿No tienes cuenta?</p>
+            </div>
+        </div>
+
+        <div class="create-account-container">
+            <a href="/Registro.html"><button class="create-account-btn">Crear una cuenta</button></a>
+        </div>
+
+
+    </main>
+
+
+    <!-- Botón de WhatsApp -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="/images/logo1.png" alt="Logo" class="logo-img">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección Sobre Nosotros -->
+            <div class="footer-about">
+                <h3>Sobre Subastec</h3>
+                <p> Somos una plataforma líder en ventas en línea que conecta
+                    a compradores en todo el mundo para obtener productos
+                    exclusivos a precios increibles.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="/Pagina de inicio.html">Inicio</a></li>
+                    <li><a href="/Quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="/Subastas.html">Subastas</a></li>
+                    <li><a href="/Notificaciones.html">Notificaciones</a></li>
+                    <li><a href="/Login.html">Ingresar</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p><strong>Teléfono:</strong> 935 826 637</p>
+                <p><strong>Email:</strong> soporte@subastec.com</p>
+                <p><strong>Dirección:</strong> Av.San Juan 123, Lima , Peru</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <!-- Enlace a Facebook -->
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo3.png" alt="Facebook">
+                    </a>
+
+                    <!-- Enlace a Twitter -->
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo4.png" alt="Twitter">
+                    </a>
+
+                    <!-- Enlace a Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo2.png" alt="Instagram">
+                    </a>
+
+                    <!-- Enlace a WhatsApp -->
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo4.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Derechos Reservados -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Subastec. Todos los derechos reservados. | <a href="/public/terminos.html">Términos y
+                    Condiciones</a> | <a href="/Frontend/politica.html">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

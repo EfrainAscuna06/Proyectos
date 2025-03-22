@@ -1,0 +1,542 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b0f3b;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    position: fixed; 
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: 100px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin: 0 10px;
+    font-size: 16px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.nav-btn:hover {
+    color: #ac21a9;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 70px;
+    border: 0px solid #5a5656;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+
+/* Imágenes del Slider */
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    top: -50px;
+
+}
+
+.image-slider {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    top: 80px;
+    height: 600px;
+}
+
+.slider-image {
+    display: none;
+    width: 1000px;
+    height: 600px;
+}
+
+.slider-image.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textoinicial {
+    position: relative;
+    top: 50px;
+}
+
+.textoinicial h2 {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.textoinicial p {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+
+/*info*/
+
+
+.company-description {
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin-top: 200px;
+    display: flex;
+    top: -70px;
+}
+
+.description-container {
+    max-width: 1200px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image-container img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    text-align: left;
+    position: relative;
+    left: 45px;
+}
+
+.text-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-content button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #591758;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-content button:hover {
+    background-color: #3b0f3b;
+}
+
+/* Sección Productos en Subasta */
+
+.productos {
+    padding: 4rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #3b0f3b;
+}
+
+.producto {
+    display: inline-block;
+    width: 22%;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 1rem;
+}
+
+.producto-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3b0f3b;
+}
+
+.producto-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.precio {
+    font-size: 1.2rem;
+    color: #591758;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.participar-btn {
+    background-color: #591758;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.participar-btn:hover {
+    background-color: #3b0f3b;
+}
+
+/* Sección de Registro */
+.registro {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    top: -50px;
+}
+
+.registro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.registro-texto {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    left: 140px;
+}
+
+.registro-texto h2 {
+    font-size: 2.5rem;
+    color: #242121;
+    margin-bottom: 1rem;
+}
+
+.registro-texto p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-registrarse {
+    padding: 1rem 2rem;
+    background-color: #591758;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registrarse:hover {
+    background-color: #3b0f3b;
+}
+
+.registro-imagen img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    right: 160px;
+}
+
+.registro-imagen img:hover {
+    transform: scale(1.05);
+}
+
+/*Boton de carrito*/
+
+.carrito-boton-container {
+    position:absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.carrito-boton span{
+    position: relative;
+
+}
+
+.carrito-boton {
+    position:fixed;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    right: 20px;
+}
+
+.carrito-icono {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px;
+}
+
+
+/* Boton de whatsapp */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; 
+    right: 1250px; 
+    align-items: center;
+    gap: 10px; 
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer; 
+}
+
+.floating-whatsapp img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Pie de página */
+
+.footer {
+    background-color: #3b0f3b;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 35px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-links {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-contact {
+    max-width: 300px;
+    position: relative;
+    left: 40px;
+}
+
+.footer-social {
+    max-width: 280px;
+    position: relative;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffdaff;
+}
+
+.footer-about p,
+.footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffdaff;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Sección inferior del pie de página */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    margin-top: 1rem;
+}
+
+.footer-bottom a {
+    color: #ffdaff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

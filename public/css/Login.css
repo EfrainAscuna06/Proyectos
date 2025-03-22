@@ -1,0 +1,378 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b0f3b;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    position: fixed;                 
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: 100px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.nav-btn1 {
+    background-color: transparent;
+    color: #591758;
+    border: none;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.nav-btn:hover {
+    color: #ac21a9; 
+}
+
+.search-bar {
+    padding: 5px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 70px;
+    border: 0px solid #5a5656;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);  
+    margin-left: 0;  
+    margin-right: 20px;  
+}
+
+
+/* Cuerpo de la página */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%; 
+    margin-top: 100px;
+}
+
+/* Contenedor de login */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;      
+    box-shadow: 0px 5px 8px 8px rgba(0, 0, 0, 0.2);   
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;    
+    margin-top: -10px;   
+    margin-left: 60px;
+    color: #591758;   
+}
+
+.login-form .input-group {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);   
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0px solid #5a5656;
+    font-size: 16px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Botón de Login */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #250925;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #3b0f3b;
+}
+
+/* Botones adicionales */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-btn {
+    background-color: transparent;
+    color: #771e75;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-btn:hover {
+    color: #000000;
+}
+
+.signup-prompt {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Botón "Crear una cuenta" */
+.create-account-container {
+    text-align: center; 
+    margin-top: 0px;    
+}
+
+.create-account-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e21c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;         
+    margin-top: 20px;      
+}
+
+.create-account-btn:hover {
+    background-color: #791818;
+}
+
+/* Estilo para el botón "Olvidaste tu contraseña" */
+.forgot-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #125286;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.forgot-btn:hover {
+    color: #2884cf;
+}
+
+/* Estilo para el botón de "Crear una cuenta" */
+.signup-btn {
+    padding: 10px;
+    background-color: #591758;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.signup-btn:hover {
+    background-color: #3b0f3b;
+}
+
+/* Estilos adicionales para la página */
+.signup-prompt p {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+
+/* Boton de whatsapp */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; 
+    right: 1250px;
+    align-items: center;
+    gap: 10px; 
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer; 
+}
+
+.floating-whatsapp img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Pie de página */
+
+.footer {
+    background-color: #3b0f3b;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 35px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-links {
+    max-width: 300px;
+    position: relative;
+    left: 80px;
+}
+
+.footer-contact {
+    max-width: 300px;
+    position: relative;
+    left: 40px;
+}
+
+.footer-social {
+    max-width: 280px;
+    position: relative;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffdaff;
+}
+
+.footer-about p,
+.footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffdaff;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Sección inferior del pie de página */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    margin-top: 1rem;
+}
+
+.footer-bottom a {
+    color: #ffdaff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

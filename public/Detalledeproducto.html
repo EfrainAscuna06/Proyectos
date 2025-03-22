@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de productos | SUBASTEC</title>
+    <link rel="stylesheet" href="/css/Detalledeproducto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/images/3b288cc5-5872-4167-8fe9-fe8ddbf34fbe-removebg-preview.png" alt="SUBASTEC Logo"
+                class="logo-img">
+        </div>
+        <div class="nav-links">
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+            <a href="/Pagina de inicio.html"><button class="nav-btn">Inicio</button></a>
+            <a href="/Quienessomos.html"><button class="nav-btn">Quienes somos</button></a>
+            <a href="/Tienda.html"><button class="nav-btn">Tienda</button></a>
+            <a href="/Notificaciones.html"><button class="nav-btn">Notificaciones</button></a>
+            <a href="/Login.html"><button class="nav-btn login-btn">Ingresar</button></a>
+        </div>
+    </header>
+
+
+    <div class="producto-detalle">
+        <div class="producto-imagen">
+            <img class="imagen" id="producto-imagen" src="https://via.placeholder.com/30">
+        </div>
+
+        <div class="producto-info">
+            <h2 id="producto-titulo">Producto 1</h2>
+            <p id="producto-descripcion">Descripción detallada del producto aquí...</p>
+            <p class="precio" id="producto-precio">$180</p>
+            <a href="/Procesodepago.html"><button id="btn-comprar-detalle" class="btn">Comprar</button></a>
+            <button class="btn-agregar-carrito">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="carrito-boton-container">
+        <a href="/Carritodecompras.html" class="carrito-boton">
+            <img src="/images/carrito.png" alt="Carrito" class="carrito-icono">
+            <span>Carrito</span>
+        </a>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="/images/logo1.png" alt="Logo" class="logo-img">
+        </a>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección Sobre Nosotros -->
+            <div class="footer-about">
+                <h3>Sobre Subastec</h3>
+                <p> Somos una plataforma líder en ventas en línea que conecta
+                    a compradores en todo el mundo para obtener productos
+                    exclusivos a precios increibles.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="/Pagina de inicio.html">Inicio</a></li>
+                    <li><a href="/Quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="/Subastas.html">Subastas</a></li>
+                    <li><a href="/Notificaciones.html">Notificaciones</a></li>
+                    <li><a href="/Login.html">Ingresar</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p><strong>Teléfono:</strong> 935 826 637</p>
+                <p><strong>Email:</strong> soporte@subastec.com</p>
+                <p><strong>Dirección:</strong> Av.San Juan 123, Lima , Peru</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <!-- Enlace a Facebook -->
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo3.png" alt="Facebook">
+                    </a>
+
+                    <!-- Enlace a Twitter -->
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo4.png" alt="Twitter">
+                    </a>
+
+                    <!-- Enlace a Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo2.png" alt="Instagram">
+                    </a>
+
+                    <!-- Enlace a WhatsApp -->
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/logo4.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Derechos Reservados -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Subastec. Todos los derechos reservados. | <a href="/public/terminos.html">Términos y
+                    Condiciones</a> | <a href="/Frontend/politica.html">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Array de productos (con 24 productos para este ejemplo)
+        const productos = [
+            { id: 1, titulo: "SAMSUNG Galaxy A15", descripcion: "Pantalla supervívida y brillante. FHD+ Super AMOLED de 6.5” · Crea tu toma con múltiples cámaras. Cámara de 50 MP · Hazlo con un rendimiento mejorado.", precio: "S/.600", imagen: "/images/subasta1.jpg", tiempoRestante: "Tiempo restante: 3 días 12 horas" },
+            { id: 2, titulo: "Auto Toyota 4Runner", descripcion: "Espacio para todo lo que necesites al salir a explorar. La 4Runner tiene asientos para 7 viajeros con numerosas comodidades: 3 tomas de 12V para dispositivos eléctricos, variedad de compartimientos interiores, y asientos delanteros con ajuste eléctrico y calefacción (según versión). Además, con sus filas posteriores versátiles puedes hacer espacio para más. ", precio: "S/.200 000", imagen: "/images/subasta5.webp", tiempoRestante: "Tiempo restante: 2 días 8 horas" },
+            { id: 3, titulo: "Batidora Profesional 6.9L", descripcion: "Diseño profesional redondeado de bowl elevable. Ideal para mezcla pesada, fácil limpieza y uso. Construcción totalmente en metal, engranajes de metal de alta precisión y perillas de control de metal. Robusto, estable y duradero.", precio: "S/.3200", imagen: "/images/subasta9.webp", tiempoRestante: "Tiempo restante: 1 día 5 horas" },
+            { id: 4, titulo: "PELOTA ADIDAS FÚTBOL", descripcion: "Las pelotas de fútbol de adidas son de una amplia gama de colores que brillarán en la cancha. Un estilo así de único y luminoso consigue que los pases sean tan rápidos como la velocidad de la luz. ", precio: "S/.60", imagen: "/images/subasta13.avif", tiempoRestante: "Tiempo restante: 5 días" },
+            { id: 5, titulo: "Muñeca BARBIE", descripcion: "Barbie representaba a una “joven adolescente a la moda” y se planteó, desde el inicio, como una muñeca que abanderaba el lema “tú puedes ser lo que quieras ser”.", precio: "S/.120", imagen: "/images/subasta17.avif", tiempoRestante: "Tiempo restante: 7 horas" },
+            { id: 6, titulo: "Cámara fotográfica CANON", descripcion: "Negro/plata: aprox. 449 g , Blanco: aprox. 451 g , (Prueba estándar CIPA, batería y tarjeta de memoria incluidas)", precio: "S/.1800", imagen: "/images/subasta2.webp", tiempoRestante: "Tiempo restante: 3 días 12 horas" },
+            { id: 7, titulo: "MOTO JETTOR OMEGA 200", descripcion: "Motor de 4 tiempos OHC , Cilindrada de 200 cc , Potencia de , 15.0 HP a 8500 rpm , Transmisión mecánica , Arranque eléctrico , Freno delantero y posterior de disco , Capacidad de tanque de 16 litros , Velocidad máxima de 120 km/h , Garantía de 12 meses o 10,000 km ", precio: "S/.6500", imagen: "/images/subasta6.webp", tiempoRestante: "Tiempo restante: 2 días 8 horas" },
+            { id: 8, titulo: "Licuadora IMACO", descripcion: "Estas destacan por su potencia, diseño, fiabilidad y resistencia, las cuales aseguran un excelente rendimiento por mucho tiempo. Además, los precios de sus modelos de licuadoras son accesibles para todo tipo de presupuestos.", precio: "S/.250", imagen: "/images/subasta10.webp", tiempoRestante: "Tiempo restante: 1 día 5 horas" },
+            { id: 9, titulo: "PELOTA DE BASKET WILSON", descripcion: "El balón de Wilson NBA Forge Plus cuenta con la cubierta Pure Feel de alto rendimiento y la construcción Ever Bounce que proporciona una mejor superficie de contacto De los dedos, un mejor control y durabilidad. ", precio: "S/.120", imagen: "/images/subasta14.webp", tiempoRestante: "Tiempo restante: 5 días" },
+            { id: 10, titulo: "MUÑECO BUZZ LIGHTYEAR", descripcion: "Buzz Lightyear es un personaje principal de la franquicia Toy Story. Es un astronauta de juguete y una figura de acción en la franquicia.", precio: "S/.270", imagen: "/images/subasta18.webp", tiempoRestante: "Tiempo restante: 7 horas" },
+            { id: 11, titulo: "Laptop Lenovo IdeaPad 1", descripcion: "Los procesadores Intel® Pentium® te permiten trabajar con facilidad , Pantalla de 14” hasta FHD con bordes delgados , Peso a partir de 1,4 kg para que la lleves a todos lados , Dos altavoces integrados de Dolby Audio™ para disfrutar de tu música preferida , La pantalla y algunos puertos pueden variar; colores sujetos a disponibilidad", precio: "S/.1400", imagen: "/images/subasta3.webp", tiempoRestante: "Tiempo restante: 4 días" },
+            { id: 12, titulo: "Scooter E2 Pro", descripcion: "Experimente pura alegría en su viaje con E2 Pro, ya sea por trabajo, traslado o placer. El E2 Pro adopta la tecnología RideyLONG interna de Segway-Ninebot, que logra una mejora del alcance del 20% sin agregar una batería adicional, lo que le permite disfrutar de la conducción por más tiempo.", precio: "S/.1800", imagen: "/images/subasta7.png", tiempoRestante: "Tiempo restante: 3 días 12 horas" },
+            { id: 13, titulo: "Refrigeradora Side Samsung", descripcion: "Eficiencia energética , Mejor conservación de los alimentos , Mayor espacio interior , La mejor conectividad.", precio: "S/.6000", imagen: "/images/subasta11.webp", tiempoRestante: "Tiempo restante: 2 días 8 horas" },
+            { id: 14, titulo: "PELOTA DE VOLEY MIKASA", descripcion: "Diseño de panel aerodinámico perfectamente equilibrado para una mejor visibilidad. Superficie de cuero sintético muy suave y lisa para propiedades de juego óptimas.", precio: "S/.180", imagen: "/images/subasta15.avif", tiempoRestante: "Tiempo restante: 1 día 5 horas" },
+            { id: 15, titulo: "Coche de acrobacias RC", descripcion: "Los coches de radio control Short Course son réplicas de los todoterreno que corren en Baja1000 y CORR (Championship Off-Road Racing), los hay eléctricos y de gasolina, con tracción 2WD y 4WD. ", precio: "S/.140", imagen: "/images/subasta19.webp", tiempoRestante: "Tiempo restante: 5 días" },
+            { id: 16, titulo: "Playstation 5 Digital", descripcion: "Frecuencia variable de GPU hasta 2.23 GHz (10.3 TFLOPS). Memoria GDDR6 16 GB con ancho de banda de 448 GB/s. Unidad de almacenamiento SSD 825 GB. Ancho de banda de lectura 5.5 GB/s (datos puros) y 9 GB/s (datos comprimidos).", precio: "S/.2000", imagen: "/images/subasta4.jpg", tiempoRestante: "Tiempo restante: 7 horas" },
+            { id: 17, titulo: "Auto Kia All-New K3", descripcion: "Para complementar todo el look & feel de una SUV, el All-New K3 Cross cuenta con un motor aspirado de 1.6 litros, que genera 121 HP y un torque de 15.4 Kg.M a 4,850 rpm; asegurando un gran desempeño.", precio: "S/.58000", imagen: "/images/subasta8.jpg", tiempoRestante: "Tiempo restante: 2 días 8 horas" },
+            { id: 18, titulo: "Cocina LG 5 hornillas", descripcion: "COCINA A GAS LG LRGL5845S 5 HORNILLAS EASYCLEAN ACERO INOXIDABLE", precio: "S/.4500", imagen: "/images/subasta12.webp", tiempoRestante: "Tiempo restante: 1 día 5 horas" },
+            { id: 19, titulo: "Camiseta Oficial De Fútbol Perú", descripcion: "El uniforme de la selección de fútbol de Perú se compone de una camiseta blanca con una banda diagonal roja (de allí deriva el apodo que recibe la selección: La Blanquirroja, La Rojiblanca o La Bicolor).", precio: "S/.200", imagen: "/images/subasta16.avif", tiempoRestante: "Tiempo restante: 5 días" },
+            { id: 20, titulo: "HOT WHEELS JUEGO DE PISTAS DE AUTOS", descripcion: "Cuando se despliega, la pista de carreras de lanzamiento de Hot Wheels se convierte en un circuito de 5 carriles, con un mecanismo de arranque equitativo y una línea de meta que muestra claramente al ganador. ¡Hasta 5 coches pueden competir a la vez!", precio: "S/.1100", imagen: "/images/subasta20.webp", tiempoRestante: "Tiempo restante: 7 horas" },
+        ];
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener el productId de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('productId'), 10);
+
+            if (productId) {
+                // Buscar el producto en el array de productos
+                const producto = productos.find(p => p.id === productId);
+
+                if (producto) {
+                    // Modificar los elementos de la página con los detalles del producto
+                    document.getElementById('producto-imagen').src = producto.imagen;
+                    document.getElementById('producto-titulo').textContent = producto.titulo;
+                    document.getElementById('producto-descripcion').textContent = producto.descripcion;
+                    document.getElementById('producto-precio').textContent = producto.precio;
+                    document.getElementById('producto-tiempo').textContent = producto.tiempoRestante;
+                } else {
+                    console.error("Producto no encontrado");
+                }
+            } else {
+                console.error("No se ha especificado un productId");
+            }
+        });
+
+        document.getElementById('agregar-carrito-btn').addEventListener('click', () => {
+            const producto = {
+                titulo: document.getElementById('producto-titulo').textContent,
+                descripcion: document.getElementById('producto-descripcion').textContent,
+                precio: document.getElementById('producto-precio').textContent,
+                imagen: document.getElementById('producto-imagen').src
+            };
+            agregarAlCarrito(producto);
+        });
+    </script>
+
+    <script>
+        // Seleccionar botones de "Agregar al carrito"
+        const botonesAgregar = document.querySelectorAll('.btn-agregar-carrito');
+
+        // Función para agregar un producto al carrito
+        botonesAgregar.forEach(boton => {
+            boton.addEventListener('click', (event) => {
+                const productoDiv = event.target.closest('.producto-detalle');
+                const imagen = productoDiv.querySelector('#producto-imagen').src;
+                const titulo = productoDiv.querySelector('#producto-titulo').textContent;
+                const descripcion = productoDiv.querySelector('#producto-descripcion').textContent;
+                const precio = productoDiv.querySelector('#producto-precio').textContent.replace('$', '');
+
+                const producto = { imagen, titulo, descripcion, precio };
+
+                // Obtener el carrito actual desde localStorage
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+                // Verificar si el producto ya está en el carrito
+                const productoExistente = carrito.find(p => p.titulo === titulo);
+                if (!productoExistente) {
+                    carrito.push(producto); // Agregar el nuevo producto
+                    localStorage.setItem('carrito', JSON.stringify(carrito)); // Guardar en localStorage
+                    alert('Producto agregado al carrito');
+                } else {
+                    alert('El producto ya está en el carrito');
+                }
+            });
+        });
+    </script>
+
+
+
+    <script>
+        document.getElementById('btn-comprar-detalle').addEventListener('click', function (e) {
+            e.preventDefault(); // Para evitar que la página se recargue o redirija antes de guardar los datos
+
+            // Obtener datos del producto
+            const producto = {
+                nombre: document.getElementById('producto-titulo').textContent,
+                precio: document.getElementById('producto-precio').textContent.replace('$', '').trim() // Eliminar símbolo de '$' y espacios
+            };
+
+            // Guardar el producto en localStorage
+            localStorage.setItem('productoSeleccionado', JSON.stringify(producto));
+
+            // Redirigir a la página de pago
+            window.location.href = '/Procesodepago.html';
+        });
+    </script>
+
+
+</body>
+
+</html>
